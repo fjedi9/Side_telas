@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
+body {
+	background: #D1F2EB;
+}
+
+
+.container-initial h4 {
+	font-family: 'Lobster Two', cursive;
+	font-size: 18pt;
+}
+.container-initial p {
+	font-family: 'Lobster Two', cursive;
+	font-size: 13pt;
+}
+
+#box-login {
+	margin: 30% auto 0;
+}
+#box-cadastro {
+	margin: 15% auto 0;
+}
+
+#box-login .mini-box {
+	padding: 15px;
+	
+	background: #17A589;
+	box-shadow: 1px 1px 2px #999;
+	color: #fff;
+}
+#box-cadastro .mini-box {
+	padding: 15px;
+	
+	background: #17A589;
+	box-shadow: 1px 1px 2px #999;
+	color: #fff;
+}
+
+#box-login .mini-box:last-child {
+	padding: 10px;
+	margin: 10px auto 20px;
+	background: #17A589;
+	box-shadow: 1px 1px 2px #999;
+	color: #fff;
+}
+
+#box-cadastro .mini-box:last-child {
+	padding: 10px;
+	margin: 10px auto 20px;
+	background: #17A589;
+	box-shadow: 1px 1px 2px #999;
+	color: #fff;
+}
+
+.img-side {
+	margin: 25% auto 0;
+	width: 80%;
+	height: 80%;
+}
+
+/* Visão Geral Page Settings */
+
+.side-primary-color {
+	background: #17A589;
+	color: #fff;
+	box-shadow: 1px 1px 1px #999;
+}
+.side-primary-color:hover {
+	background: #0E6655;
+	color: #fff;
+	box-shadow: 1px 1px 1px #999;
+}
+
+.side-secundary-color {
+	background: #fff;
+	color: #555;
+}
+.side-secundary-color:hover {
+	background: #aaa;
+	color: #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.thumbnail-green img {
+	margin: 0 auto;
+	width: 20%;
+	height: 20%;
+}
+
+.thumbnail:hover {
+	box-shadow: 1px 1px 2px #999;
+}
+
+.thumbnail-green {
+	background: #0E6655;
+	color: white;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+.thumbnail-green:hover {
+	box-shadow: 1px 1px 2px #999;
+}
+
+footer {
+	font-family: 'Lobster Two', cursive;
+}
+
+@media screen and (max-width: 768px) {
+	.img-side {
+		margin: 10% auto 0;
+		width: 60%;
+		height: 60%;
+	}
+	#box-login {
+	margin: 0 auto;
+	}
+	#box-cadastro {
+		margin: 0 auto;
+	}
+	.container-initial h4 {
+	font-size: 14pt;
+	}
+}
