@@ -81,14 +81,19 @@ body {
 	box-shadow: 1px 1px 3px #000;
 }
 
-.thumbnail-green img {
-	margin: 0 auto;
-	width: 20%;
-	height: 20%;
+.thumbnail img {
+	width: 40%;
+	height: 40%;
 }
 
 .thumbnail:hover {
 	box-shadow: 1px 1px 2px #999;
+}
+
+.thumbnail-green img {
+	margin: 0 auto;
+	width: 20%;
+	height: 20%;
 }
 
 .thumbnail-green {
