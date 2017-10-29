@@ -107,6 +107,18 @@ body {
 	box-shadow: 1px 1px 2px #999;
 }
 
+.breadcrumb {
+	background: #17A589;
+	color: #fff;
+	box-shadow: 1px 1px 2px #999;
+}
+
+.panel-success .panel-heading {
+	background: #17A589;
+	color: #fff;
+	border-color: #17A589;
+}
+
 footer {
 	font-family: 'Lobster Two', cursive;
 }
