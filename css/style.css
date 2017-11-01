@@ -4,6 +4,9 @@ body {
 	background: #D1F2EB;
 }
 
+tr {
+	background: #fff;
+}
 
 .container-initial h4 {
 	font-family: 'Lobster Two', cursive;
@@ -63,7 +66,7 @@ body {
 .side-primary-color {
 	background: #17A589;
 	color: #fff;
-	box-shadow: 1px 1px 1px #999;
+	/*box-shadow: 1px 1px 1px #999;*/
 }
 .side-primary-color:hover {
 	background: #0E6655;
@@ -117,6 +120,22 @@ body {
 	background: #17A589;
 	color: #fff;
 	border-color: #17A589;
+}
+
+.paginacao .pagination > li > a {
+	background: #17A589;
+	color: #fff;
+	border-color: #fff;
+}
+.paginacao .pagination > li > a:hover {
+	background: #0E6655;
+	color: #fff;;
+}
+
+.paginacao .pagination > li.active > a {
+	background: #0E6655;
+	color: #fff;;
+	border-color: #0E6655;
 }
 
 footer {
