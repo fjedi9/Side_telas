@@ -1,6 +1,4 @@
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-});
+
 
 function show_cadastro() {
 	$('#box-login').hide();
