@@ -138,6 +138,14 @@ tr {
 	border-color: #0E6655;
 }
 
+.box-confirm .modal-header{
+	background-color: #17A589;
+	color: #fff;
+}
+.box-confirm .modal-header .bootbox-close-button{
+	color: #fff;
+}
+
 footer {
 	font-family: 'Lobster Two', cursive;
 }

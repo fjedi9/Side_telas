@@ -40,8 +40,8 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Visão geral <span class="sr-only">(current)</span></a></li>
-              <li><a href="view_produtos.html">Produtos</a></li>
+              <li><a href="visao-geral.html">Visão geral </a></li>
+              <li class="active"><a href="view_produtos.html">Produtos <span class="sr-only">(current)</span></a></li>
               <li><a href="#">Planilha</a></li>
               <li><a href="#">Indicadores</a></li>
             </ul>
@@ -85,7 +85,7 @@
 
         <div class="col-md-3 pull-right">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search for...">
+            <input type="text" class="form-control" placeholder="Buscar">
             <span class="input-group-btn">
               <button class="btn side-primary-color" type="button"><span class="glyphicon glyphicon-search"></span></button>
             </span>
@@ -114,7 +114,7 @@
               <td>
                 <button type="button" class="btn btn-success btn-xs" data-toggle="tooltip" data-placement="top" title="Visulizar"><span class="glyphicon glyphicon-search"></span></button>
                 <button type="button" class="btn btn-primary btn-xs" data-toggle="tooltip" data-placement="top" title="Editar"><span class="glyphicon glyphicon-edit"></span></button>
-                <button type="button" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="Deletar"><span class="glyphicon glyphicon-remove"></span></button>
+                <button type="button" class="btn btn-danger btn-xs" id="prd_01" data-toggle="tooltip" data-placement="top" title="Deletar"><span class="glyphicon glyphicon-remove"></span></button>
               </td>
             </tr>
             <tr>
@@ -254,5 +254,33 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Bootbox Library dependency -->
+    <script type="text/javascript" src="js/bootbox.min.js"></script>
+
+    <script type="text/javascript">
+
+      $('.btn-danger').on("click", function(e) {
+        e.preventDefault();
+
+        bootbox.confirm({
+            title: "Tem certeza?",
+            message: "Dejeja deletar o produto X?",
+            buttons: {
+                confirm: {
+                    label: 'Yes',
+                    className: 'btn-success'
+                },
+                cancel: {
+                    label: 'No',
+                    className: 'btn-danger'
+                }
+            },
+            className: "box-confirm",
+            callback: function (result) {
+                console.log('This was logged in the callback: ' + result);
+            }
+        });
+      });
+    </script>
   </body>
 </html>
