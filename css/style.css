@@ -158,6 +158,12 @@ tr {
 	font-size: 9pt;
 }
 
+thead > tr > th {
+	text-align: center;
+	background:  #0E6655;
+	color: #fff;
+}
+
 footer {
 	font-family: 'Lobster Two', cursive;
 }
