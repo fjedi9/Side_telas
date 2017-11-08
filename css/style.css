@@ -146,6 +146,91 @@ tr {
 	color: #fff;
 }
 
+/* CSS Style Navbar */
+
+.navbar-side {
+	background: #17A589;
+	border-radius: 0;
+}
+.navbar-side .navbar-brand {
+  color: #fff;
+}
+.navbar-side .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-side .navbar-nav > li > a:hover,
+.navbar-side .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #0E6655;
+}
+.navbar-side .navbar-nav > .active > a,
+.navbar-side .navbar-nav > .active > a:hover,
+.navbar-side .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #0E6655;
+}
+.navbar-side .navbar-nav > .disabled > a,
+.navbar-side .navbar-nav > .disabled > a:hover,
+.navbar-side .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-side .navbar-toggle {
+  border-color: #17A589;
+}
+.navbar-side .navbar-toggle:hover,
+.navbar-side .navbar-toggle:focus {
+  background-color: #0E6655;
+}
+.navbar-side .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-side .navbar-collapse,
+.navbar-side .navbar-form {
+  border-color: #fff;
+}
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #0E6655;
+}
+.navbar-nav > li > .dropdown-menu li a {
+	color: #fff;
+}
+.navbar-nav > li > .dropdown-menu li a:hover,
+.navbar-nav > li > .dropdown-menu li a:active {
+	background-color: #0E2205;
+	color: #fff;
+}
+@media (max-width: 767px) {
+  .navbar-side .navbar-nav .open .dropdown-menu	{
+  	background-color: #0E6655;
+  }
+  .navbar-side .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+  }
+  .navbar-side .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-side .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: #0E2205;
+  }
+  .navbar-side .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-side .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-side .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #0E2205;
+  }
+  .navbar-side .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-side .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-side .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #fff;
+    background-color: #0E6655;
+  }
+}
+
+
+
 .container-form {
 	width: 100%;
 	margin: 15px auto;
@@ -162,6 +247,11 @@ thead > tr > th {
 	text-align: center;
 	background:  #0E6655;
 	color: #fff;
+}
+
+.table-prod > tbody > tr > td:last-child,
+.table-prod > tbody > tr > td:first-child {
+	text-align: center;
 }
 
 footer {
