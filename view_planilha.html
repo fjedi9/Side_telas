@@ -45,7 +45,7 @@
               <li><a href="visao-geral.html">Visão geral <span class="sr-only">(current)</span></a></li>
               <li><a href="view_produtos.html">Produtos</a></li>
               <li class="active"><a href="view_planilha.html">Planilha</a></li>
-              <li><a href="#">Indicadores</a></li>
+              <li><a href="indicators.html">Indicadores</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span></a></li>
@@ -62,149 +62,161 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
       </nav>
+    
+    <div class="breadcrumb-side">
+      <h2>Planilhas</h2>
+    </div>
 
     <div class="container">
 
-      <h2>Planilhas <button class="btn btn-warning" style="float:right; margin-left: 4px;">exportar</button><button class="btn btn-success" style="float:right;">importar</button></h2> 
-      <table class="table table-bordered">
-        <thead class="conteiner-form">
-          <td>
-            <center>
-            <select class="form-control">
-              <option selected="selected">Parametro 1</option>
-              <option>Parametro 2</option>
-              <option>Parametro 3</option>
-              <option>Parametro 4</option>
-              <option>Parametro 5</option>
-              <option>Parametro 6</option>
-            </select>
-            </center>
-          </td>
-          <td>
-            <select class="form-control">
-              <option>Parametro 1</option>
-              <option selected="selected">Parametro 2</option>
-              <option>Parametro 3</option>
-              <option>Parametro 4</option>
-              <option>Parametro 5</option>
-              <option>Parametro 6</option>
-            </select>
-          </td>
-          <td>
-            <select class="form-control">
-              <option>Parametro 1</option>
-              <option>Parametro 2</option>
-              <option selected="selected">Parametro 3</option>
-              <option>Parametro 4</option>
-              <option>Parametro 5</option>
-              <option>Parametro 6</option>
-            </select>
-          </td>
-          <td>
-            <select class="form-control">
-              <option>Parametro 1</option>
-              <option>Parametro 2</option>
-              <option>Parametro 3</option>
-              <option selected="selected">Parametro 4</option>
-              <option>Parametro 5</option>
-              <option>Parametro 6</option>
-            </select>
-          </td>
-          <td>
-            <select class="form-control">
-              <option>Parametro 1</option>
-              <option>Parametro 2</option>
-              <option>Parametro 3</option>
-              <option>Parametro 4</option>
-              <option selected="selected">Parametro 5</option>
-              <option>Parametro 6</option>
-            </select>
-          </td>
-          <td>
-            <select class="form-control">
-              <option>Parametro 1</option>
-              <option>Parametro 2</option>
-              <option>Parametro 3</option>
-              <option>Parametro 4</option>
-              <option>Parametro 5</option>
-              <option selected="selected">Parametro 6</option>
-            </select>
-          </td>
-        </thead>
-        <tbody class="dados">
-          <tr>
-            <td>001</td>
-            <td>Mariza biscoito</td>
-            <td>112</td>
-            <td>R$ 1,80</td>
-            <td>10/07/2017</td>
-            <td>34</td>
-          </tr>
-          <tr>
-            <td>003</td>
-            <td>Maria biscoito</td>
-            <td>132</td>
-            <td>R$ 0,80</td>
-            <td>17/07/2017</td>
-            <td>37</td>
-          </tr>
-          <tr>
-            <td>004</td>
-            <td>Mariza chocolate</td>
-            <td>314</td>
-            <td>R$ 4,80</td>
-            <td>10/08/2017</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>005</td>
-            <td>Bauducco Wafer</td>
-            <td>104</td>
-            <td>R$ 1,50</td>
-            <td>17/08/2017</td>
-            <td>35</td>
-          </tr>
-          <tr>
-            <td>007</td>
-            <td>Mariza biscoito</td>
-            <td>112</td>
-            <td>R$ 1,80</td>
-            <td>10/07/2017</td>
-            <td>34</td>
-          </tr>
-          <tr>
-            <td>020</td>
-            <td>Maria biscoito</td>
-            <td>132</td>
-            <td>R$ 0,80</td>
-            <td>17/07/2017</td>
-            <td>37</td>
-          </tr>
-          <tr>
-            <td>021</td>
-            <td>Mariza biscoito</td>
-            <td>112</td>
-            <td>R$ 1,80</td>
-            <td>10/07/2017</td>
-            <td>34</td>
-          </tr>
-          <tr>
-            <td>033</td>
-            <td>Maria biscoito</td>
-            <td>132</td>
-            <td>R$ 0,80</td>
-            <td>17/07/2017</td>
-            <td>37</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="row pull-right">
+        <button class="btn side-secundary-color">Importar</button>
+        <button class="btn side-primary-color">Exportar</button>
+      </div>
+      <br>
+      <div class="row">
+        
+        <table class="table table-bordered">
+          <thead class="conteiner-form">
+            <td>
+              <center>
+              <select class="form-control">
+                <option selected="selected">Parametro 1</option>
+                <option>Parametro 2</option>
+                <option>Parametro 3</option>
+                <option>Parametro 4</option>
+                <option>Parametro 5</option>
+                <option>Parametro 6</option>
+              </select>
+              </center>
+            </td>
+            <td>
+              <select class="form-control">
+                <option>Parametro 1</option>
+                <option selected="selected">Parametro 2</option>
+                <option>Parametro 3</option>
+                <option>Parametro 4</option>
+                <option>Parametro 5</option>
+                <option>Parametro 6</option>
+              </select>
+            </td>
+            <td>
+              <select class="form-control">
+                <option>Parametro 1</option>
+                <option>Parametro 2</option>
+                <option selected="selected">Parametro 3</option>
+                <option>Parametro 4</option>
+                <option>Parametro 5</option>
+                <option>Parametro 6</option>
+              </select>
+            </td>
+            <td>
+              <select class="form-control">
+                <option>Parametro 1</option>
+                <option>Parametro 2</option>
+                <option>Parametro 3</option>
+                <option selected="selected">Parametro 4</option>
+                <option>Parametro 5</option>
+                <option>Parametro 6</option>
+              </select>
+            </td>
+            <td>
+              <select class="form-control">
+                <option>Parametro 1</option>
+                <option>Parametro 2</option>
+                <option>Parametro 3</option>
+                <option>Parametro 4</option>
+                <option selected="selected">Parametro 5</option>
+                <option>Parametro 6</option>
+              </select>
+            </td>
+            <td>
+              <select class="form-control">
+                <option>Parametro 1</option>
+                <option>Parametro 2</option>
+                <option>Parametro 3</option>
+                <option>Parametro 4</option>
+                <option>Parametro 5</option>
+                <option selected="selected">Parametro 6</option>
+              </select>
+            </td>
+          </thead>
+          <tbody class="dados">
+            <tr>
+              <td>001</td>
+              <td>Mariza biscoito</td>
+              <td>112</td>
+              <td>R$ 1,80</td>
+              <td>10/07/2017</td>
+              <td>34</td>
+            </tr>
+            <tr>
+              <td>003</td>
+              <td>Maria biscoito</td>
+              <td>132</td>
+              <td>R$ 0,80</td>
+              <td>17/07/2017</td>
+              <td>37</td>
+            </tr>
+            <tr>
+              <td>004</td>
+              <td>Mariza chocolate</td>
+              <td>314</td>
+              <td>R$ 4,80</td>
+              <td>10/08/2017</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>005</td>
+              <td>Bauducco Wafer</td>
+              <td>104</td>
+              <td>R$ 1,50</td>
+              <td>17/08/2017</td>
+              <td>35</td>
+            </tr>
+            <tr>
+              <td>007</td>
+              <td>Mariza biscoito</td>
+              <td>112</td>
+              <td>R$ 1,80</td>
+              <td>10/07/2017</td>
+              <td>34</td>
+            </tr>
+            <tr>
+              <td>020</td>
+              <td>Maria biscoito</td>
+              <td>132</td>
+              <td>R$ 0,80</td>
+              <td>17/07/2017</td>
+              <td>37</td>
+            </tr>
+            <tr>
+              <td>021</td>
+              <td>Mariza biscoito</td>
+              <td>112</td>
+              <td>R$ 1,80</td>
+              <td>10/07/2017</td>
+              <td>34</td>
+            </tr>
+            <tr>
+              <td>033</td>
+              <td>Maria biscoito</td>
+              <td>132</td>
+              <td>R$ 0,80</td>
+              <td>17/07/2017</td>
+              <td>37</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> 
 
-      <footer>
-        <hr style="border-color: #555">
-        <h4 class="text-center">Direitos Reservados a SIDE Enterprise &copy;</h4>
-        <p class="text-center">2017</p>
-      </footer>
     </div>
+
+    <footer id="fixed-endpage">
+      <h4 class="text-center">Direitos Reservados a SIDE Enterprise &copy;</h4>
+      <p class="text-center">2017</p>
+    </footer>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Visão Geral | SIDE</title>
+    <title>Indicadores | SIDE</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -20,7 +20,8 @@
 
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="js/indicator-chart.js"></script>
+    <script type="text/javascript" src="js/indicator-giro.js"></script>
+    <script type="text/javascript" src="js/indicator-cobertura.js"></script>
     <script type="text/javascript" src="js/abc-chart.js"></script>
   </head>
   <body>
@@ -42,10 +43,10 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="visao-geral.html">Visão geral <span class="sr-only">(current)</span></a></li>
+              <li><a href="visao-geral.html">Visão geral <span class="sr-only">(current)</span></a></li>
               <li><a href="view_produtos.html">Produtos</a></li>
               <li><a href="view_planilha.html">Planilha</a></li>
-              <li><a href="indicators.html">Indicadores</a></li>
+              <li class="active"><a href="indicators.html">Indicadores</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span></a></li>
@@ -62,89 +63,102 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
       </nav>
+    
+    <div class="breadcrumb-side">
+      <h2>Indicadores</h2>
+    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3 side-border">
+    <div class="backg-giro">
+
+      <div class="container">
+        <h4 class="badge">Giro de estoque</h4>
+        <div class="row">
+          <div class="col-xs-12 col-sm-7">
             <div class="thumbnail">
-              <img src="img/logo-side-2.png" alt="Logo SIDE" class="img-responsive">
-              <div class="caption text-center">
-                <h4>Nome da Empresa</h4>
-                <p>
-                  <a href="#" class="btn side-primary-color text-left" role="button"><span class="glyphicon glyphicon-cog"></span><br>Gerais</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="#" class="btn side-primary-color text-right" role="button"><span class="glyphicon glyphicon-briefcase"></span><br>Empresa</a>
-                </p>
-              </div>
+              <table class="table table-striped table-condensed table-responsive text-center">
+                <thead>
+                  <tr>
+                    <th>Mês</th>
+                    <th>Estoque Inicial</th>
+                    <th>Entrada (Reposição)</th>
+                    <th>Saída (Venda)</th>
+                    <th>Estoque Médio</th>
+                    <th>Giro</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>JAN</td><td>1.200</td><td>200</td><td>700</td><td>950</td><td><b>0,74</b></td>
+                  </tr>
+                  <tr>
+                    <td>FEV</td><td>700</td><td>300</td><td>750</td><td>475</td><td><b>1,57</b></td>
+                  </tr>
+                  <tr>
+                    <td>MAR</td><td>250</td><td>1.000</td><td>700</td><td>400</td><td><b>1,75</b></td>
+                  </tr>
+                  <tr>
+                    <td>ABR</td><td>550</td><td>1.450</td><td>800</td><td>875</td><td><b>0,91</b></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="thumbnail-green">
-              <h4><span class="glyphicon glyphicon-hand-right"></span> Acesso Rápido</h4>
-              <hr>
-              <div class="caption text-center">
-                <p>
-                  <a href="add-produto.html" class="btn side-secundary-color text-left" role="button"><span class="glyphicon glyphicon-gift"></span><br>Cadastrar<br>Produto</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="#" class="btn side-secundary-color text-right" role="button"><span class="glyphicon glyphicon-open-file"></span><br>InserirPlanilha</a>
-                </p>
-              </div>
-            </div>
-            <div class="thumbnail-green">
-              <img src="img/002-insert-table.png" alt="Sheet Icon" class="img-responsive">
-              <div class="caption text-center">
-                <h3>Módulo de Planilhas</h3>
-                <p>Obtenha acesso ao módulo de planilha <a href="#" class="btn side-secundary-color" role="button">aqui</a></p>
-              </div>
-            </div>
-         </div>
-         <div class="col-xs-12 col-sm-6 col-md-4">
+          </div>
+          <div class="col-xs-12 col-sm-5">
             <div class="thumbnail">
-              <div class="caption">
-                <div>
-                  <h4>Últimos produtos Inseridos</h4>
-                </div>
-                <table class="table table-responsive table-condensed table-striped">
-                  <thead>
-                    <tr>
-                      <th>Id</th><th>Produto</th><th>Em estoque (Uni)</th><th>Val. Unitário</th>
-                    </tr>
-                  </thead>                   
-                  <tbody>
-                    <tr>
-                      <td>001</td><td>Mariza Biscoito</td><td>112</td><td>R$ 1,80</td>
-                    </tr>
-                    <tr>
-                      <td>061</td><td>Refrigerante Schin</td><td>224</td><td>R$ 3,50</td>
-                    </tr>
-                    <tr>
-                      <td>342</td><td>Biscoito prestígio</td><td>454</td><td>R$ 2,10</td>
-                    </tr>
-                    <tr> 
-                      <td>001</td><td>Mariza Biscoito</td><td>112</td><td>R$ 1,80</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <p class="text-right"><a href="#" class="btn side-primary-color" role="button">ver mais...</a></p>
-              </div>
+              <div id="chart_div_giro" style="width: auto; height: auto; margin: 0 auto;"></div>
             </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-5">
-          <div class="thumbnail">
-            <div class="caption text-center">
-              <h3>Indicadores</h3>
-              <div id="chart_div" style="width: auto; height: auto; margin: 0 auto;"></div>
-            </div>
-            <p class="text-center"><a href="#" class="btn side-primary-color" role="button">ver mais...</a></p>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-9">
-            <div class="thumbnail">
-              <div class="caption text-center">
-                <h4>Curva e Classificação ABC</h4>
-                <div id="curve_chart" style="width: auto; height: auto;"></div>
-                <p class="text-right"><a href="#" class="btn side-primary-color" role="button">ver mais...</a></p>
-              </div>
-            </div>
-        </div> 
+        <p class="text-right"><a href="#" class="btn btn-sm side-primary-color">Clique aqui</a> para vizualizar o giro de estoque completo.</p>
       </div>
+
     </div>
+
+    <div class="backg-cobertura">
+      
+      <div class="container">
+        <h4 class="badge">Cobertura de estoque</h4>
+        <div class="row">
+          <div class="col-xs-12 col-sm-7">
+            <div class="thumbnail">
+              <table class="table table-striped table-condensed text-center">
+                <thead>
+                  <tr>
+                    <th>Mês</th>
+                    <th>Quant. de vendas</th>
+                    <th>Estoque Atual</th>
+                    <th>Média de Vendas</th>
+                    <th>Cobertura</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>JAN</td><td>700</td><td>1.200</td><td>23,3</td><td><b>52 dias aprox.</b></td>
+                  </tr>
+                  <tr>
+                    <td>FEV</td><td>750</td><td>1.000</td><td>26,79</td><td><b>18 dias aprox.</b></td>
+                  </tr>
+                  <tr>
+                    <td>MAR</td><td>700</td><td>1.200</td><td>22,6</td><td><b>53 dias aprox.</b></td>
+                  </tr>
+                  <tr>
+                    <td>ABR</td><td>800</td><td>900</td><td>26,6</td><td><b>30 dias aprox.</b></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-5">
+            <div class="thumbnail">
+              <div id="chart_div_cobertura" style="width: auto; height: auto; margin: 0 auto;"></div>
+            </div>
+          </div>
+        </div>
+        <p class="text-right"><a href="#" class="btn btn-sm side-primary-color">Clique aqui</a> para vizualizar a corbetura de estoque completo.</p>
+      </div>
+
+    </div>
+
     <footer>
       <h4 class="text-center">Direitos Reservados a SIDE Enterprise &copy;</h4>
       <p class="text-center">2017</p>
